@@ -14,6 +14,7 @@ namespace CMP1903M_A01_2223
         readonly string[] Values = { "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
         readonly string[] Suits = { "Spades", "Clubs", "Diamonds", "Hearts" };
 
+        //Use of encapsulation
         private int Card_value;
         private int Card_suit;
 

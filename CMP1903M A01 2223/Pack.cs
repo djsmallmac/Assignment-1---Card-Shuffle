@@ -101,7 +101,12 @@ namespace CMP1903M_A01_2223
             if (pack.Count == 0) // checks if the pack has been built
             {
                 Console.WriteLine("The pack is empty"); // if the pack is empty will write to the console that the pack is empty
-                return null; // indicates nothing has been reurned and ends
+                return null; // indicates nothing has been returned 
+            }
+            else if (pack.Count < amount) // Checks if there is enough cards left in the pack to deal this amount
+            {
+                Console.WriteLine("There is not enough cards left in the pack to deal this amount"); // outputs that there isnt enough cards left in the pack to deal the amount specified
+                return null; // indicates nothing has been returned and ends
             }
             else
             {
