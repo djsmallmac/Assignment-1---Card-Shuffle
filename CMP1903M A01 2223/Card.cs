@@ -41,9 +41,9 @@ namespace CMP1903M_A01_2223
             Value = value;
             Suit = suit;
         }
-        public void Show()
+        public void Show() // This retrieves the values and suits in the pack
         {
-            Console.WriteLine(Values[Value] + " of " + Suits[Suit]);
+            Console.WriteLine(Values[Value] + " of " + Suits[Suit]); // This displays the value and suit of a card and writes it to the console
         }
 
     }
