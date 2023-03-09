@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    // This calls the Test method inside the Testing file and runs it
     class Program
     {
         static void Main(string[] args)
         {
-            Testing.Test();
+            Testing.Test(); 
         }
     }
 }
