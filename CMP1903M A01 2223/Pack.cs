@@ -69,7 +69,6 @@ namespace CMP1903M_A01_2223
             // This code checks if the value passed is 3 and if it is doesnt shuffle the cards
             else if (typeOfShuffle == 3)
             {
-                Console.WriteLine("You have selected that the pack is not to be shuffled therefore there is no change to the pack"); // This will write to the console that the pack hasnt been shuffled
                 return true;
             }
             else
