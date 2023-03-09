@@ -11,8 +11,8 @@ namespace CMP1903M_A01_2223
         //fields
         public static List<Card> pack = new List<Card>();
         public static List<Card> dealtCards = new List<Card>();
-        public static List<Card> packFirstHalf = new List<Card>();
-        public static List<Card> packSecondHalf = new List<Card>();
+        public static List<Card> packHalf = new List<Card>();
+      
 
         // Pack Constructor
         public Pack()
@@ -55,18 +55,14 @@ namespace CMP1903M_A01_2223
             //Riffle Shuffle
             else if (typeOfShuffle == 2) // if the value is 2 it will proceed with this function
             {
-                packFirstHalf.AddRange(pack.GetRange(0, 25)); 
-                packSecondHalf.AddRange(pack.GetRange(25, 25));
-                int Num_Of_Cards = 0;
                 int Pack_Pointer = 0;
-                while (Num_Of_Cards != 52)
+                while (Pack_Pointer != pack.Count / 2)
                 {
-                    pack[Num_Of_Cards] = packFirstHalf[Pack_Pointer];
-                    Pack_Pointer++;
-                    pack[Num_Of_Cards] = packSecondHalf[Pack_Pointer];
-                    Num_Of_Cards++;
+                    packHalf.Add(pack[Pack_Pointer]);
+                    packHalf.Add(pack[Pack_Pointer + (pack.Count/2)]);
                     Pack_Pointer++;
                 }
+                pack = packHalf;
                 return true;
             }
             // This code checks if the input from the user is 3 and if it is doesnt shuffle the cards
@@ -81,7 +77,7 @@ namespace CMP1903M_A01_2223
             }
         }
         // This method will deal one card
-        public static Card deal()
+        public static Card Deal()
         {
             if (pack.Count == 0)
             {
@@ -93,12 +89,13 @@ namespace CMP1903M_A01_2223
                 Card FirstCard = pack[0];
                 pack.RemoveAt(0);
                 return FirstCard;
+                
 
             }
 
         }
         // This method deals an amount of cards specified by the user
-        public static List<Card> dealCard(int amount)
+        public static List<Card> DealCard(int amount)
         {
             if (pack.Count == 0)
             {
