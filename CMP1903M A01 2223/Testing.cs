@@ -33,11 +33,23 @@ namespace CMP1903M_A01_2223
             //Pack.DisplayPack();
 
             //This section displays dealing the cards
-            Console.WriteLine("This is dealing one card");
-            Pack.Deal().Show();
+
+            //This is dealing one card
+            //Console.WriteLine("This is dealing one card");
+            //Pack.Deal().Show();
+            //Console.WriteLine("This is the rest of the deck");
+            //Pack.DisplayPack(); 
+
+            //This is dealing multiple cards
+            Console.WriteLine("This is dealing multiple cards");
+            Pack.DealCard(5);
+            foreach (Card card in Pack.dealtCards)
+            {
+                card.Show();
+            }
             Console.WriteLine("This is the rest of the deck");
-            Pack.DisplayPack(); 
-        
+            Pack.DisplayPack();
+
         }
     }
 }
