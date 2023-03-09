@@ -66,7 +66,7 @@ namespace CMP1903M_A01_2223
                 pack = packHalf; // sets the value of the pack to the temporary list
                 return true;
             }
-            // This code checks if the input from the user is 3 and if it is doesnt shuffle the cards
+            // This code checks if the value passed is 3 and if it is doesnt shuffle the cards
             else if (typeOfShuffle == 3)
             {
                 Console.WriteLine("You have selected that the pack is not to be shuffled therefore there is no change to the pack"); // This will write to the console that the pack hasnt been shuffled
