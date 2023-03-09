@@ -13,7 +13,7 @@ namespace CMP1903M_A01_2223
             //This Displays the pack
             Pack Deck = new Pack();
             Pack.DisplayPack();
-            
+
             //The next section displays different shuffles
 
             //This displays the Fisher-Yates shuffle
@@ -22,10 +22,10 @@ namespace CMP1903M_A01_2223
             //Pack.DisplayPack();
 
             //This displays the Riffle Shuffle
-            Console.WriteLine("This is the Riffle Shuffle");
-            Pack.shuffleCardPack(2);
-            Pack.DisplayPack();
-            
+            //Console.WriteLine("This is the Riffle Shuffle");
+            //Pack.shuffleCardPack(2);
+            //Pack.DisplayPack();
+
 
             //This is not Shuffled
             //Console.WriteLine("This is the pack not shufffled: ");
@@ -33,7 +33,10 @@ namespace CMP1903M_A01_2223
             //Pack.DisplayPack();
 
             //This section displays dealing the cards
-
+            Console.WriteLine("This is dealing one card");
+            Pack.Deal().Show();
+            Console.WriteLine("This is the rest of the deck");
+            Pack.DisplayPack(); 
         
         }
     }
