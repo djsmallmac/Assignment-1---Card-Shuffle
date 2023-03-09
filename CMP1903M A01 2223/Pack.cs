@@ -31,6 +31,7 @@ namespace CMP1903M_A01_2223
                 }
             }
         }
+
         // Methods
         // This method shuffles the pack depending on which type of shuffle is selected
         public static bool shuffleCardPack(int typeOfShuffle)
@@ -126,3 +127,4 @@ namespace CMP1903M_A01_2223
         }
     }
 }
+ 
